@@ -14,11 +14,50 @@
             <h1 class="font-title text-4xl font-bold">Space Travel</h1>
             
             <figure class="flex gap-4">
-                <img class="size-10 rounded-full" src="./images/astro01.jpg" alt="Astronauta-1">
-                <img class="size-10 rounded-full" src="./images/astro02.jpg" alt="Astronauta-2">
-                <img class="size-10 rounded-full" src="./images/astro03.jpg" alt="Astronauta-3">
+                <img class="size-10 rounded-full cursor-pointer hover:animate-spin hover:border-rose-400 duration-500 border-2 border-cyan-600 object-cover " src="./images/astro01.jpg" alt="Astronauta-1">
+                <img class="size-10 rounded-full cursor-pointer hover:animate-spin hover:border-rose-400 duration-500 border-2 border-cyan-600 object-cover " src="./images/astro02.jpg" alt="Astronauta-2">
+                <img class="size-10 rounded-full cursor-pointer hover:animate-spin hover:border-rose-400 duration-500 border-2 border-cyan-600 object-cover " src="./images/astro03.jpg" alt="Astronauta-3">
+                <img class="size-10 rounded-full cursor-pointer hover:animate-spin hover:border-rose-400 duration-500 border-2 border-cyan-600 object-cover " src="./images/astro04.jpg" alt="Astronauta-4">
+                <img class="size-10 rounded-full cursor-pointer hover:animate-spin hover:border-rose-400 duration-500 border-2 border-cyan-600 object-cover " src="./images/astro05.jpg" alt="Astronauta-5">
+                <img class="size-10 rounded-full cursor-pointer hover:animate-spin hover:border-rose-400 duration-500 border-2 border-cyan-600 object-cover " src="./images/astro06.jpg" alt="Astronauta-6">
             </figure>
         </header>
+        
+        <form id="form-viagem" name="formViagem" method="get" action="" class="mb-10 mt-5">
+            <p class="mb-5 font-medium text-cyan-300 text-center text-balance lg:text-left">
+                Preencha os dados abaixo para confirmar sua viagem espacial
+            </p>
+
+            <fieldset class="border-2 border-white/10 bg-white/5 p-4 rounded-2xl">
+                <legend class="px-2 font-title text-lg font-bold text-cyan-300">
+                    01. Dados do Viajante
+                </legend>
+                
+                <div class="">
+                    <div>
+                        <label for="nome">Nome Completo</label>
+                        <input type="text" id="nome" name="nome" minlength="10" maxlength="50" placeholder="Digite seu nome" required>
+                    </div>
+
+                    <div>
+                        <label for="codigo">Código de Acesso</label>
+                        <input type="text" id="codigo" name="codigo" placeholder="Digite seu código" required>
+                    </div>
+
+                    <div>
+                        <label for="data">Data da viagem</label>
+                        <input type="date" id="data" name="data" required>
+                    </div>
+
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                    </div>
+
+                    <button type="submit">Reservar Viagem</button>
+                </div>
+            </fieldset>
+        </form>
     </main>
 </body>
 </html>
